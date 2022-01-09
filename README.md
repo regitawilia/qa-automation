@@ -19,6 +19,7 @@ In order to utilise this project you need to have the following installed locall
 ## Test Case
 
 * Create a new computer data (complete form)
+* Create a ner computer data (without computer name)
 * Edit / Update computer data (change computer name)
 * Delete compuater data
 * Filter by name
