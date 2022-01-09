@@ -25,7 +25,8 @@ In order to utilise this project you need to have the following installed locall
 * Filter by name
 
 ## How to start automation
-1. Open microsoft visual studio
-2. Click on test menu
-3. Choose run all test
-4. Wait until done
+1. Clone this project to your local computer
+2. Open microsoft visual studio
+3. Click on test menu
+4. Choose run all test
+5. Wait until done
