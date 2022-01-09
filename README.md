@@ -23,3 +23,8 @@ In order to utilise this project you need to have the following installed locall
 * Delete compuater data
 * Filter by name
 
+## How to start
+1. Open microsoft visual studio
+2. Click on test menu
+3. Choose run all test
+4. Wait until done
