@@ -52,6 +52,27 @@ namespace SeleniumCsharp
         }
 
         [Test]
+        public void WithoutName()
+        {
+            driver.Navigate().GoToUrl("http://computer-database.gatling.io/computers");
+            IWebElement add = driver.FindElement(By.Id("add"));
+            System.Threading.Thread.Sleep(1000);
+            add.Click();
+
+            driver.FindElement(By.Id("introduced")).SendKeys("2022-01-01");
+            driver.FindElement(By.Id("discontinued")).SendKeys("2022-12-31");
+            IWebElement company = driver.FindElement(By.Id("company"));
+            company.SendKeys("RCA");
+
+            IWebElement submit = driver.FindElement(By.XPath("//body/section[@id='main']/form[1]/div[1]/input[1]"));
+            System.Threading.Thread.Sleep(1000);
+            submit.Click();
+            System.Threading.Thread.Sleep(1000);
+            Assert.AreEqual("Failed to refine type : Predicate isEmpty() did not fail.");
+        }
+
+
+        [Test]
         public void Edit()
         {
             driver.Navigate().GoToUrl("http://computer-database.gatling.io/computers");
